@@ -7,13 +7,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.Data;
 
+
 @Data
 @Entity
+@Table(name = "users")
 public class User implements Serializable{
-
 	
 	private static final long serialVersionUID = -8096332091879625048L;
 	
@@ -26,6 +28,7 @@ public class User implements Serializable{
 	@Column(nullable = false)
 	private String password;
 	
+	@Column(nullable = false)
 	private String email;
 
 }
