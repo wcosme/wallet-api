@@ -17,7 +17,7 @@ import br.com.wallet.entities.User;
 import br.com.wallet.repository.UserRepository;
 
 @SpringBootTest
-@ActiveProfiles(value = "test")
+@ActiveProfiles("test")
 public class UserServiceTest {
 	
 	@MockBean

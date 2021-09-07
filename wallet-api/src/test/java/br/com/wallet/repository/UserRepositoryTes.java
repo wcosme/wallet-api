@@ -16,7 +16,7 @@ import org.springframework.test.context.ActiveProfiles;
 import br.com.wallet.entities.User;
 
 @SpringBootTest
-@ActiveProfiles(value = "test")
+@ActiveProfiles("test")
 public class UserRepositoryTes {
 	
 	private static final String EMAIL = "teste@teste.com.br";

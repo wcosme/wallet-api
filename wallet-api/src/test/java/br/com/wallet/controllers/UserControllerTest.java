@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.Profile;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
@@ -24,7 +24,7 @@ import br.com.wallet.service.UserService;
 
 @AutoConfigureMockMvc
 @SpringBootTest
-@Profile(value = "test")
+@ActiveProfiles("test")
 public class UserControllerTest {
 	
 	private static final Long ID = 1L;
