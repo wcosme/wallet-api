@@ -11,10 +11,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import br.com.wallet.entities.User;
 
 @SpringBootTest
+@ActiveProfiles(profiles = "test")
 public class UserRepositoryTes {
 	
 	private static final String EMAIL = "teste@teste.com.br";
